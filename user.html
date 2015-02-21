@@ -1,0 +1,147 @@
+<html> 
+  <head> 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="css/bootstrap.css"> 
+    <link rel="stylesheet" type='text/css' href="css/main.css"> 
+    <title>Your Closet</title>
+  </head> 
+  <body> 
+    <div id="Container">
+
+      <div id="control-bar">
+      <i id='hamburger-menu' class="fa fa-bars"></i>
+        <div id="logo">
+        <i class="fa fa-suitcase"></i><h1>PackItUp</h1>
+        </div>
+        <div id="filter">
+          <h2 class="filter-menu">Filter</h2>
+            <div class="filter button hide all" data-filter="all">Show All</div>
+            <div class="filter button hide" data-filter=".black">Black</div>
+            <div class="filter button hide" data-filter=".white">White</div>
+            <div class="filter button hide" data-filter=".sweaters">Sweaters</div>
+            <div class="filter button hide" data-filter=".shorts">Shorts</div>
+            <div class="filter button hide" data-filter=".floral">Floral</div>
+            <div class="filter button hide" data-filter=".bottoms">Bottoms</div>
+            <div class="filter button hide" data-filter=".tops">Tops</div>
+        </div>
+
+        <div id="sort">
+          <h2 class="sort-menu">Sort</h2>
+          <div class="sort button hide" data-sort="myorder:asc">New to old</div>
+          <div class="sort button hide"  data-sort="myorder:desc">Old to new</div>
+          <div class="sort button hide" data-sort="random">Mix it up</div>
+        </div>
+        
+        <div id="pack">
+          <div class="filter button" data-filter=".pack-item">Packing List</div>
+          <div class="filter button" data-filter=".day-one">Day 1</div>
+          <div class="filter button" data-filter=".day-two">Day 2</div>
+          <div class="filter button" data-filter=".day-three">Day 3</div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+              <div class="modal-content" id="day-category">
+                <h4>Make an outfit</h4>
+                  <div id="modal-close"><i class="fa fa-times"></i></div>
+                  <ul>
+                    <li><a href="#" data-day="one">Day 1</a></li>
+                    <li><a href="#" data-day="two">Day 2</a></li>
+                    <li><a href="#" data-day="three">Day 3</a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="mix sweaters white" data-myorder="1">
+          <img src="images/white-gauze-sweater.jpg">
+          <div class="star-wrapper">
+            <i class="fa fa-plus-square-o"></i>
+          </div>
+        </div>
+
+        <div class="mix black tops" data-myorder="2">
+          <img src="images/pleat-wrap-blk-tank.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix shorts bottoms floral white" data-myorder="3">
+          <img src="images/stripes-roses-shorts.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix sweaters" data-myorder="4">
+          <img src="images/seven-sweater.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix bottoms black" data-myorder="5">
+          <img src="images/button-jeans.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix bottoms black" data-myorder="6">
+         <img src="images/pleather-legging.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix black top" data-myorder="7">
+          <img src="images/black-leather-tank.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+          </div>
+
+
+        <div class="mix tops" data-myorder="8">
+          <img src="images/aritiza-top.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix tops" data-myorder="8">
+          <img src="images/sheer-pleat-tee.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix tops" data-myorder="8">
+          <img src="images/blk-plaid-flannel.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="mix tops black" data-myorder="8">
+          <img src="images/sheer-blk-tee.jpg">
+            <div class="star-wrapper">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+        </div>
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+      </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body> 
+</html>

@@ -1,0 +1,219 @@
+#Container .mix{
+  display: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1em;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+h4 {
+  padding-left: 1em;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin-bottom: 0;
+
+}
+
+.modal-content li {
+  font-size: 1.2em;
+  position: relative;
+}
+
+#modal-close {
+  position: absolute;
+  float: right;
+  top: 25;
+  right: 20;
+  cursor: pointer;
+}
+
+
+.container{
+  padding: 2% 2% 0;
+  text-align: justify;
+  background: #FFF;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap {
+  display: inline-block;
+  width: 23.5%;
+}
+
+.container .mix{
+  background: #eee;
+  margin-bottom: 2%;
+  color: black;
+  border: 1px solid rgba(38, 38, 38, .9);
+  font-size: 1em;
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+  padding: 1px;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+}
+
+#control-bar {
+  padding: 5px 30px;
+  text-align: right;
+  border-bottom: 1px solid rgba(38, 38, 38, .5);
+}
+
+#control-bar #logo {
+  float: left;
+}
+
+.fa-suitcase {
+  font-size: 3em;
+  margin: 10px 5px 10px 0;
+/*  color: grey;*/
+}
+
+#control-bar .sort,
+#control-bar .filter {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+
+}
+
+.button,
+.active {
+  font-size: .8em;
+  border: 1px solid rgba(38, 38, 38, .9);
+  text-transform: uppercase;
+  padding: 5px;
+  line-height: 1.5em;
+  cursor: pointer;
+  background: #FFF;
+  border-radius: 2px;
+
+}
+
+#control-bar .active {
+  background: #000;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.star-wrapper {
+  position: absolute;
+  top:0;
+
+}
+
+.fa-plus-square,
+.fa-plus-square-o {
+  position: relative;
+  padding: 10px;
+  font-size: 2em;
+  margin: 0;
+  clear: both;
+  cursor: pointer;
+}
+
+#pack {
+  display: none;
+}
+
+
+.btn-primary, 
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+  position: absolute;
+  color: #000;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/* SCREEN SIZE < 420PX PHONE*/
+@media all and (max-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 49%;
+  }
+
+  .fa-bars {
+    display: inline-block;
+    float: right;
+    font-size: 2.5em;
+    margin-top: 3.8%;
+  }
+
+  #sort,
+  #filter {
+    display: none; 
+  }
+
+  #control-bar #logo {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+}
+
+/* SCREEN SIZE > 421px and < 640PX TABLET*/
+@media all and (min-width: 421px) and (max-width: 640px){
+  .container .mix,
+  .container .gap {
+    width: 32%; 
+  }
+
+  .fa-bars {
+    display: inline-block;
+    float: right;
+    font-size: 2.5em;
+    margin-top: 3.8%;
+
+  }
+
+  #sort,
+  #filter {
+    display: none; 
+  }
+
+  #control-bar #logo {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+}
+
+
+
