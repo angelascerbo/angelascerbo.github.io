@@ -53,12 +53,12 @@ $(function(){
 
     //check if no items have a star, slide up packing list button
     $('.mix').each (function() {
-      if($('.mix').hasClass("pack-item")) {
+      if($('.mix').hasClass("pack-item")){
         $('#pack').show();
       }
-      else {
-        // $('#empty-suitecase').show();
+      else if( $('#sort .button').hasClass('active') ||  $('#filter .button').hasClass('active')){
         $('#pack').slideUp();
+      } else {
         refresh();
       }
     //end of check each mix function
