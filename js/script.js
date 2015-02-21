@@ -58,6 +58,7 @@ $(function(){
       }
       else if( $('#sort .button').hasClass('active') ||  $('#filter .button').hasClass('active')){
         $('#pack').slideUp();
+        $('.mix').removeClass('day-' + dayNum);
       } else {
         refresh();
       }
