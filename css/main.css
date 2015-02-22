@@ -160,6 +160,10 @@ img {
   display: none;
 }
 
+#footer {
+  position: bottom;
+}
+
 /* SCREEN SIZE < 420PX PHONE*/
 @media all and (max-width: 420px){
   .container .mix,
