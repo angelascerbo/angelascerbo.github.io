@@ -1,9 +1,12 @@
 $(function(){
   //mix it up
   $('#Container').mixItUp();  
+
+  //variables
   var isOpen = false;
   var dayNum = $('#day-category li a').data('day');
-  //logo click, active show all
+
+  //logo click, change to show all
   $('#logo').click(function(){
     $('#Container').mixItUp('filter', 'all');
   });
@@ -26,34 +29,38 @@ $(function(){
     }
   });
   
-  //click function for star
+  //click function for plus +
   $('.fa-plus-square-o, .fa-plus-square').click(function(){
-    //when star is clicked, toggle solid or outline star
+    //when + is clicked, toggle solid or outline +
     $(this).toggleClass('fa-plus-square-o fa-plus-square');
 
-    //show the packing list button if item is stared
+    //show the packing list button if any item has solid +
     if($(this).hasClass('fa-plus-square')) {
       $('#pack').slideDown();
     }
 
-    //put item in pack list if stared 
+    //put item in pack list if solid + 
     $(this).closest('.mix').toggleClass("pack-item");
 
-    //remove item from pack list when star is unclicked
+    //remove item from day when + is unclicked
+    if ($(this).hasClass('fa-plus-square-o')) {
+        $(this).closest('.mix').removeClass('day-' + dayNum);
+        console.log('remove class of day-#');
+      }
+
+    //remove item from pack list when + is unclicked
     if ($(this).hasClass('fa-plus-square-o') && $('#pack .button').hasClass('active')) {
-      $(this).closest('.mix').removeClass('day-' + dayNum);
-      console.log('will not remove day class');
       $(this).closest('.mix').fadeOut();
     }
 
-    //show modal on star click
+    //show modal on + click
     if ($(this).hasClass('fa-plus-square')) {
       $('.modal').modal('show');
       var selectedItem = $(this).closest('.mix').data('myorder');
       assignDay(selectedItem);
     }
 
-    //check if no items have a star, slide up packing list button
+    //check if no items have a +, slide up packing list button or send to show all
     $('.mix').each (function() {
       if ($('.mix').hasClass("pack-item")){
         $('#pack').show();
@@ -89,19 +96,6 @@ $(function(){
     //end of assignDay  
     }
 
-    // function removeDay (dayNum) {
-    //   if (dayNum === 0) {
-    //       $('.mix').removeClass('day-' + dayNum);
-    //   }
-    // }
-  if ($(this).hasClass('fa-plus-square-o')) {
-    $(this).closest('.mix').removeClass('day-' + dayNum);
-    console.log('remove class is working on filter and sort');
-  }
-  // if ($(this).hasClass('fa-plus-square-o') && $('#pack .button').hasClass('active')) {
-  //   $(this).closest('.mix').removeClass('day-' + dayNum);
-  //   console.log('remove class?');
-  // }
 
   function refresh () {
     if ($('#pack').css("display","none")) {
@@ -110,7 +104,7 @@ $(function(){
   }
 
 
-  //end of star click function
+  //end of + click function
   });
 
 
