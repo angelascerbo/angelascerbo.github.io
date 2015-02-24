@@ -4,7 +4,7 @@ $(function(){
 
   //variables
   var isOpen = false;
-  var dayNum = $('#day-category li a').data('day');
+  var dayNum 
 
   //logo click, change to show all
   $('#logo').click(function(){
@@ -44,8 +44,9 @@ $(function(){
 
     //remove item from day when + is unclicked
     if ($(this).hasClass('fa-plus-square-o')) {
-        $(this).closest('.mix').removeClass('day-' + dayNum);
-        console.log('remove class of day-#');
+        $(this).closest('.mix').removeClass('day-one');
+        $(this).closest('.mix').removeClass('day-two');
+        $(this).closest('.mix').removeClass('day-three');
       }
 
     //remove item from pack list when + is unclicked
@@ -92,6 +93,8 @@ $(function(){
       $('#modal-close').click(function(){ 
         $('.modal').modal('hide');
       });
+
+
 
     //end of assignDay  
     }
