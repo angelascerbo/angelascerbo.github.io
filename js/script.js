@@ -6,7 +6,7 @@ $(function(){
   var isOpen = false;
   var dayNum 
 
-  //logo click, change to show all
+  // logo click, change to show all
   $('#logo').click(function(){
     $('#Container').mixItUp('filter', 'all');
   });
