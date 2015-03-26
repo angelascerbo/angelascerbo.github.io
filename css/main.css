@@ -8,14 +8,10 @@
   font-family: Helvetica;
 }
 
-a, 
-a:visited {
+.back a, 
+.back a:visited {
   text-decoration: none;
   color: inherit;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 #hero {
@@ -83,6 +79,7 @@ a:hover {
   padding: 10px;
   cursor: pointer;
   font-size: .9em;
+  text-decoration: none;
 
 }
 
@@ -120,21 +117,12 @@ h4 {
   float: left;
   color: #7c7c7c;
   font-size: .8em;
+  cursor: pointer;
 }
 
 .modal-content li {
   font-size: 1.2em;
-  position: relative;
-  list-style: square;
-  border-radius: 2px;
-/*  margin: 0 1% 0 0;
-  display: inline-block;*/
 }
-
-.modal-content li a {
-  color: black;
-}
-
 
 #modal-close {
   position: absolute;
@@ -332,8 +320,8 @@ img {
     margin: 0 4%;
   }
 
-/* SCREEN SIZE > 421px and < 640PX TABLET*/
-@media all and (min-width: 421px) and (max-width: 640px){
+/* SCREEN SIZE > 421px and < 1024PX */
+@media all and (min-width: 421px) and (max-width: 1024px){
   .container .mix,
   .container .gap {
     width: 32%; 
@@ -376,11 +364,6 @@ img {
 
 }
 
-/*@media all and (min-width: 641px) and (max-width: 960px) {
-  #arrow {
-    display: none;
-  }
-}*/
 
 
 
