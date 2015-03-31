@@ -103,20 +103,14 @@ h1 {
 }
 .text-vcenter h1 {
   font-size: 4.5em;
+  margin: 0;
+  padding: 0;
 
-}
-@media(max-width:768px) {
-  .text-vcenter h1 {
-    font-size: 3.5em;
-  }
-  .text-vcenter h3 {
-    font-size: 1.3em;
-  }
 }
 .text-vcenter .fa {
-    font-size: 3em;
+    font-size: 50px;
     color: #fff;
-
+    margin-top: 120px;
 }
 .home-caption, 
 .start-caption {
@@ -148,47 +142,20 @@ h4 {
     color: #fff;
 }
 .home-image {
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-background: 
-    /* top, transparent */ 
-    linear-gradient(
-      rgba(77, 77, 77, .45), 
-      rgba(77, 77, 77, .45)
-    ),
-    /* bottom, image */
-    url(../images/closet.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../images/closet.jpg) no-repeat center center fixed; 
+    vertical-align: middle;
+    min-height: 100%;
+    width: 100%;
 }
 
 .start-image {
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-background: 
-    /* top, transparent */ 
-    linear-gradient(
-      rgba(77, 77, 77, .45), 
-      rgba(77, 77, 77, .45)
-    ),
-    /* bottom, image */
-    url(../images/out-the-door.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../images/out-the-door.jpg) no-repeat center center fixed; 
+    vertical-align: middle;
+    min-height: 100%;
+    width: 100%;
 }
 
-
-
-
-/*.home:after, 
+.home:after, 
 .start:after {
   position: absolute;
   top: 0;
@@ -198,7 +165,7 @@ background:
   background-color: rgba(77, 77, 77, .45);
   content: ""
 }
-*//* services section */
+/* services section */
 #services {
   background-color: #fff;
   color: #333333;
@@ -232,9 +199,7 @@ background:
 #looks .row {
   margin: 0 auto;
 }
-#looks ul {
-  padding-left: 0;
-}
+
 #looks li {
   list-style: none;
   padding: 20px;
@@ -246,7 +211,9 @@ background:
 #looks h2 {
     line-height: 1.3em
 }
-
+#looks h3 {
+  margin-left: 57px;
+}
 #looks h4 {
   display: inline;
   font-weight: normal;
@@ -261,7 +228,25 @@ background:
   }
 
 }
+/* info section */
+#information {
+  background: url(../images/estate.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information .panel {
+  opacity: 0.85;
+}
 
+#google_map {
+  height: 500px;
+}
 
 footer {
   padding: 20px 0;
