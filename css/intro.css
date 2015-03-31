@@ -142,17 +142,27 @@ h4 {
     color: #fff;
 }
 .home-image {
-  background: url(../images/closet.jpg) no-repeat center center fixed; 
-    vertical-align: middle;
-    min-height: 100%;
-    width: 100%;
+  background: url(../images/closet.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .start-image {
-  background: url(../images/out-the-door.jpg) no-repeat center center fixed; 
-    vertical-align: middle;
-    min-height: 100%;
-    width: 100%;
+  background: url(../images/out-the-door.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home:after, 
