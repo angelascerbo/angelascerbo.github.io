@@ -167,7 +167,7 @@ img {
   position: bottom;
 }
 
-.fa-bars {
+#hamburger-menu {
   display: none;
 }
 
@@ -176,14 +176,6 @@ img {
   .container .mix,
   .container .gap{
     width: 49%;
-  }
-
-  .fa-bars {
-    display: inline-block;
-    float: right;
-    font-size: 2.5em;
-    margin-top: 3.8%;
-
   }
 
   #sort,
@@ -199,7 +191,7 @@ img {
   .modal-content li {
     font-size: 1.2em;
   }
-  
+
   button {
     width: 44px;
     height: 35px;
@@ -249,12 +241,6 @@ img {
     width: 32%; 
   }
 
-  .fa-bars {
-    display: inline-block;
-    float: right;
-    font-size: 2.5em;
-    margin-top: 3.8%;
-  }
 
   #sort,
   #filter {
