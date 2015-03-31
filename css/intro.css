@@ -103,15 +103,9 @@ h1 {
 }
 .text-vcenter h1 {
   font-size: 4.5em;
+  margin: 0;
+  padding: 0;
 
-}
-@media(max-width:768px) {
-  .text-vcenter h1 {
-    font-size: 3.5em;
-  }
-  .text-vcenter h3 {
-    font-size: 1.3em;
-  }
 }
 .text-vcenter .fa {
     font-size: 3em;
@@ -148,10 +142,9 @@ h4 {
     color: #fff;
 }
 .home-image {
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
+    vertical-align: middle;
+    min-height: 100%;
+    width: 100%;
 background: 
     /* top, transparent */ 
     linear-gradient(
@@ -167,10 +160,9 @@ background:
 }
 
 .start-image {
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
+    vertical-align: middle;
+    min-height: 100%;
+    width: 100%;
 background: 
     /* top, transparent */ 
     linear-gradient(
