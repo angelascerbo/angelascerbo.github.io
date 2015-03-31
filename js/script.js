@@ -47,6 +47,10 @@ $(function(){
         $(this).closest('.mix').removeClass('day-one');
         $(this).closest('.mix').removeClass('day-two');
         $(this).closest('.mix').removeClass('day-three');
+        $(this).closest('.mix').removeClass('day-four');
+        $(this).closest('.mix').removeClass('day-five');
+        $(this).closest('.mix').removeClass('day-six');
+        $(this).closest('.mix').removeClass('day-seven');
       }
 
     //remove item from pack list when + is unclicked

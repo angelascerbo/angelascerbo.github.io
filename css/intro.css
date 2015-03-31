@@ -1,0 +1,260 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica;
+}
+img {
+    width: 80%;
+    margin-top:0;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #777; 
+  padding-top: 5px;
+}
+.container-fluid {
+    padding: 10px 2% 0 2%; 
+}
+
+/* brand - logo */
+
+h1 {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+}
+@media (max-width:768px){
+  h1 {
+    margin-left: 15px;
+  }
+}
+.fa-list-ol {
+  font-size: 2em;
+  padding-left: 4px;
+}
+.navbar-default .navbar-brand {
+    font-weight: bold;
+    color: #333;
+    font-size:40px; 
+}
+
+
+/* custom button */
+
+@media (min-width:767px) {
+  .navbar-default .navbar-nav>li>a.custom-btn {
+    font-size: 14px;
+    border: 1px solid rgba(38, 38, 38, .9);
+    text-transform: uppercase;
+    padding: 5px;
+    line-height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 2px;
+    color: #333;
+    margin-top: 9px;
+    box-sizing: border-box;
+  }
+  .navbar-default .navbar-nav>li>a.custom-btn:hover{
+      background-color: #333;
+      color: #fff; 
+  }
+}
+.get-started {
+  margin-top: 40px;
+}
+.get-started>a.custom-btn {
+  font-size: 21px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  padding: 15px;
+  line-height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 2px;
+  color: #fff;
+  box-sizing: border-box;
+  clear: both;
+  text-decoration: none;
+}
+
+.get-started>a.custom-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+    color: #fff;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  margin: 0;
+  padding: 0;
+
+}
+.text-vcenter .fa {
+    font-size: 50px;
+    color: #fff;
+    margin-top: 120px;
+}
+.home-caption, 
+.start-caption {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 2;
+}
+h1 span, 
+h2 span {
+    font-weight: 600;
+}
+h2 {
+    margin-bottom: 60px;
+}
+h4 {
+    margin-top: 30px;
+    font-size: 21px;
+    font-weight: bold;
+}
+/* hero & footer (start) sections */
+
+.home, 
+.start {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    color: #fff;
+}
+.home-image {
+  background: url(../images/closet.jpg) no-repeat center center fixed; 
+    vertical-align: middle;
+    min-height: 100%;
+    width: 100%;
+}
+
+.start-image {
+  background: url(../images/out-the-door.jpg) no-repeat center center fixed; 
+    vertical-align: middle;
+    min-height: 100%;
+    width: 100%;
+}
+
+.home:after, 
+.start:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(77, 77, 77, .45);
+  content: ""
+}
+/* services section */
+#services {
+  background-color: #fff;
+  color: #333333;
+}
+#services .glyphicon {
+  border: 2px solid #333333;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 50px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
+}
+#services p {
+    font-size: 18px;
+}
+
+@media (max-width:768px) {
+  #services p {
+    margin-bottom: 40px;
+  }
+}
+/* looks section */
+#looks {
+  background-color: #333;
+  color: #fff;
+}
+
+#looks .row {
+  margin: 0 auto;
+}
+
+#looks li {
+  list-style: none;
+  padding: 20px;
+}
+#looks .fa-check-square {
+  padding-right: 20px;
+  font-size: 25px;
+}
+#looks h2 {
+    line-height: 1.3em
+}
+#looks h3 {
+  margin-left: 57px;
+}
+#looks h4 {
+  display: inline;
+  font-weight: normal;
+}
+
+@media (max-width:768px) {
+  .be-ready {
+    text-align: center;
+  }
+  .be-ready h3 {
+    margin-top: 40px;
+  }
+
+}
+/* info section */
+#information {
+  background: url(../images/estate.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information .panel {
+  opacity: 0.85;
+}
+
+#google_map {
+  height: 500px;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}

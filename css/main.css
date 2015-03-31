@@ -8,97 +8,24 @@
   font-family: Helvetica;
 }
 
-.back a, 
-.back a:visited {
+#logo a {
   text-decoration: none;
-  color: inherit;
+  color: #333;
 }
 
-#hero {
-  background: url(../images/hero.jpg) center center no-repeat;
-  background-size: cover;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.intro-left {
-  font-size: 1.9em;
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  color: white;
-}
-
-#arrow {
-  position: absolute;
-  top: 25%;
-  right: 15%;
-
-}
-
-.intro-right {
-  position: absolute;
-  top: 15%;
-  right: 10%;
-  color: white;
-  font-size: 1.9em;
-}
-.form {
-  margin: 0 auto;
-  background: rgba(0, 0, 0, .84);
-  height: auto;
-  border-radius: 4px;
-  text-align: center;
-  padding: 4%;
-  font-size: 1.2em;
-  box-sizing: border-box;
-  float: none;
-  color: white;
-  position: relative;
-  top: 70%;
-  transform: translateY(-50%);
-}
-
-.form .cta {
-  line-height: 1.5em;
-}
-
-.form i {
-  padding: 4%;
-}
-
-.form-icons {
-  margin: 5% 0;
-}
-
-.try-button a {
-  border: 1px solid white;
-  border-radius: 2px;
-  text-align: center;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  font-size: .9em;
-  text-decoration: none;
-
-}
-
-.try-button a:hover {
-  color: black;
-  background: white;
-}
-
-#logo {
-  cursor: pointer;
+.fa-list-ol {
+  font-size: 2em;
+  padding-left: 4px;
 }
 
 
 h1 {
   display: inline-block;
-  font-size: 2em;
-  font-weight: normal;
-}
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
 
+}
 h2 {
   font-size: 1em;
   display: inline-block;
@@ -111,13 +38,6 @@ h4 {
   font-weight: normal;
   margin-bottom: 0;
 
-}
-
-.back {
-  float: left;
-  color: #7c7c7c;
-  font-size: .8em;
-  cursor: pointer;
 }
 
 .modal-content li {
@@ -169,7 +89,7 @@ h4 {
 }
 
 #control-bar {
-  padding: 2%;
+  padding: 10px 2%;
   text-align: right;
   border-bottom: 1px solid rgba(38, 38, 38, .5);
 }
@@ -243,12 +163,12 @@ img {
   border-color: transparent;
 }
 
-.fa-bars {
-  display: none;
-}
-
 #footer {
   position: bottom;
+}
+
+.fa-bars {
+  display: none;
 }
 
 /* SCREEN SIZE < 420PX PHONE*/
@@ -263,6 +183,7 @@ img {
     float: right;
     font-size: 2.5em;
     margin-top: 3.8%;
+
   }
 
   #sort,
@@ -277,51 +198,52 @@ img {
   }
   .modal-content li {
     font-size: 1.2em;
-    position: relative;
-    list-style: none;
-    margin: 0 2% 0 0;
-    display: inline-block;
-    border: 1px solid rgba(38, 38, 38, .9);
-    text-transform: uppercase;
-    padding: 5 5 1 5px;
-    background: #FFF;
-    border-radius: 2px;
   }
-  .button,
-  .active {
-    font-size: 1em;
-    border: 1px solid rgba(38, 38, 38, .9);
-    text-transform: uppercase;
-    padding: 5px;
-    line-height: 1em;
-    background: #FFF;
-    border-radius: 2px;
-    vertical-align: middle;
+  
+  button {
+    width: 44px;
+    height: 35px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  .navbar-toggle {
+    border-color: #ddd;
+
+  }
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: #ddd;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: #888;
+  }
+  .navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  .navbar-collapse,
+  .navbar-form {
+    border-color: #e7e7e7;
+  }
+  .navbar-nav > .open > a,
+  .navbar-nav > .open > a:hover,
+  .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
   }
 
-  #arrow {
-    display: none;
-  }
- 
-  .intro-left { 
-    position: relative;
-    display: block;
-    text-align: center;
-    left: 0;
-    top: 15;
-  }
-
-  .intro-right {
-    display: none;
-  }
-
-  .form {
-    top: 50%;
-    margin: 0 4%;
-  }
-
-/* SCREEN SIZE > 421px and < 1024PX */
-@media all and (min-width: 421px) and (max-width: 1024px){
+/* SCREEN SIZE > 421px and < 640PX TABLET*/
+@media all and (min-width: 421px) and (max-width: 640px){
   .container .mix,
   .container .gap {
     width: 32%; 
@@ -332,7 +254,6 @@ img {
     float: right;
     font-size: 2.5em;
     margin-top: 3.8%;
-
   }
 
   #sort,
@@ -345,24 +266,15 @@ img {
     float: none;
     text-align: center;
   }
-
   .modal-content li {
     font-size: 1.2em;
-    position: relative;
-    list-style: none;
-    margin: 0 2% 0 0;
-    display: inline-block;
-    border: 1px solid rgba(38, 38, 38, .9);
-    text-transform: uppercase;
-    padding: 5 5 1 5px;
-    background: #FFF;
-    border-radius: 2px;
-  }
-  #arrow {
-    display: none;
   }
 
 }
+
+
+
+
 
 
 
