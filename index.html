@@ -12,11 +12,9 @@
   <link href="css/intro.css" rel="stylesheet" />
 </head>
 <body>
-
-  <!--  BODY PAGE CONTENT -->
-  <!-- navigation panel -->
+<!-- navigation panel -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
@@ -42,70 +40,75 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<!-- first section - Home -->
-<div id="home" class="home">
-  <div class="text-vcenter home-caption">
-    <h1>Welcome to <span>YourList<span></h1>
-    <h3>Build your closet. Create your outfits.</h3>
-      <a href="#services" class="smooth-scroll"><i class="fa fa-chevron-down"></i></a>
-  </div>
-</div>
+<!-- first section - home -->
+    <div class='parallax-window' data-parallax='scroll' data-image-src="images/closet.jpg">
+        <div id="home" class="home">
+          <div class="text-center home-caption">
+            <h1>Welcome to <span>YourList<span></h1>
+            <h3>Build your closet. Create your outfits.</h3>
+              <a href="#services"><i class="fa fa-chevron-down"></i></a>
+          </div>
+        </div>
+      </div>
 <!-- /first section -->
 
-<!-- second section - Services -->
-<div id="services" class="pad-section">
-  <div class="container">
-    <h2 class="text-center">How it works</h2>
-    <div class="row text-center">
-      <div class="col-sm-4 col-xs-12">
-        <i class="glyphicon glyphicon-tag"></i>
-        <h4>Tag</h4>
-        <p>clothes you want to purchase</p>
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        <i class="glyphicon glyphicon-saved"></i>
-        <h4>Save</h4>
-        <p>clothes you recently purchased</p>
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        <i class="glyphicon glyphicon-upload"></i>
-        <h4>Upload</h4>
-        <p>images from your current wardrobe</p>
-      </div>
+<!-- second section - services -->
+    <div class="content">
+      <div id="services" class="pad-section">
+        <div class="container">
+          <h2 class="text-center">How it works</h2>
+          <div class="row text-center">
+            <div class="col-sm-4 col-xs-12">
+              <i class="glyphicon glyphicon-tag"></i>
+              <h4>Tag</h4>
+              <p>clothes you want to purchase</p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <i class="glyphicon glyphicon-saved"></i>
+              <h4>Save</h4>
+              <p>clothes you recently purchased</p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <i class="glyphicon glyphicon-upload"></i>
+              <h4>Upload</h4>
+              <p>images from your current wardrobe</p>
+            </div>
 
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 <!-- /second section -->
 
 <!-- third section - Looks -->
-<div id="looks" class="pad-section">
-  <div class="container">
-  <h2 class="text-center">With <span>YourList</span> create your looks for the week, on the go</h2>
-    <div class="row">
-      <div class="col-sm-8">
-        <img src="images/example.jpg" alt="" />
-      </div>
-      <div class="col-sm-4 be-ready">
-        <h3>BE READY FOR</h3>
-        <ul>
-          <li><i class="fa fa-check-square"></i><h4>Work</h4></li>
-          <li><i class="fa fa-check-square"></i><h4>Vacation</h4></li>
-          <li><i class="fa fa-check-square"></i><h4>Going out</h4></li>
-        </ul>
+  <div id="looks" class="pad-section">
+    <div class="container">
+    <h2 class="text-center">With <span>YourList</span> create your looks for the week, on the go</h2>
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+          <img src="images/example.jpg" alt="" class="example-img" />
+        </div>
+        <div class="col-md-4 col-xs-12 be-ready">
+          <h3>BE READY FOR</h3>
+          <ul>
+            <li><i class="fa fa-check-square"></i><h4>Work</h4></li>
+            <li><i class="fa fa-check-square"></i><h4>Vacation</h4></li>
+            <li><i class="fa fa-check-square"></i><h4>Going out</h4></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 <!-- /third section -->
 
 <!-- fourth section - Start -->
-<div id="start" class="start">
-  <div class="text-vcenter start-caption">
-    <h1>Where are you going?</h1>
-    <div class="col-sm-12 col-centered get-started">
-      <a href="closet.html" class="custom-btn">GET STARTED</a>
+<div class='parallax-window' data-parallax='scroll' data-image-src="images/out-the-door.jpg">
+  <div id="start" class="start">
+    <div class="text-center home-caption">
+      <h1>Where are you going?</h1>
+      <div class="col-sm-12 col-centered get-started">
+        <a href="closet.html">GET STARTED</a>
+      </div>
     </div>
   </div>
 </div>
@@ -114,13 +117,14 @@
   <footer>
       <hr />
       <div class="container">
-        <p class="text-right">&copy; 2015 Angela Scerbo</p>
+        <p class="text-left">&copy; 2015 Angela Scerbo</p>
       </div>
     </footer>
 <!-- /footer -->
 
-  <!-- attach JavaScripts -->
-  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<!-- attach JavaScripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.js"></script>
+
 </body>
 </html>
